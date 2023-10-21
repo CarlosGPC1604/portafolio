@@ -93,11 +93,11 @@ export default function Home() {
 
 			<div className="skills-grid" style={gridSkillCardStyle}>
 				{skills.map((s, index) => {
-					const position = findPosition(grid, s.id); // Necesitamos definir esta función
+    				const position = findPosition(grid, s.id);// Necesitamos definir esta función
 					return (
 						<SkillCard 
 							key={s.id} 
-							skill={s.skill} 
+							skill={s.skill}
 							level={s.level} 
 							style={{
 								gridColumn: `span ${s.level}`,
