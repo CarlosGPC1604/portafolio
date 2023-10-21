@@ -6,7 +6,7 @@ import { DiPostgresql } from 'react-icons/di';
 import { RiJavascriptFill, RiBootstrapFill } from 'react-icons/ri';
 import { BiLogoTypescript, BiLogoHtml5, BiLogoTailwindCss, BiLogoMongodb } from 'react-icons/bi';
 
-export enum SkillLevel {
+export enum SkillSize {
     JavaScript = 3,
     TypeScript = 1,
     React = 1,
@@ -25,7 +25,7 @@ export enum SkillLevel {
     MongoDB = 3,
 }
 
-const technologyIcons: Record<keyof typeof SkillLevel, JSX.Element> = {
+const technologyIcons: Record<keyof typeof SkillSize, JSX.Element> = {
     React: <FaReact size="70%"/>,
     JavaScript: <RiJavascriptFill size="70%"/>,
     TypeScript: <BiLogoTypescript size="70%"/>,
@@ -44,19 +44,34 @@ const technologyIcons: Record<keyof typeof SkillLevel, JSX.Element> = {
     MongoDB: <BiLogoMongodb size="70%"/>,
 };
 
-export const SkillCard = ({ skill, level }: { skill: keyof typeof SkillLevel; level: number }) => {
-    const cardSize = level * 50; // solo un ejemplo
+const skills = [
+    { id: 1, skill: SkillSize.React, level: SkillSize.React },
+    { id: 2, skill: SkillSize.JavaScript, level: SkillSize.JavaScript },
+    { id: 3, skill: SkillSize.TypeScript, level: SkillSize.TypeScript },
+    { id: 4, skill: SkillSize.Java, level: SkillSize.Java },
+    { id: 5, skill: SkillSize.CSharp, level: SkillSize.CSharp },
+    { id: 6, skill: SkillSize.CPlusPlus, level: SkillSize.CPlusPlus },
+    { id: 7, skill: SkillSize.SQLServer, level: SkillSize.SQLServer },
+    { id: 8, skill: SkillSize.PostgreSQL, level: SkillSize.PostgreSQL },
+    { id: 9, skill: SkillSize.NestJS, level: SkillSize.NestJS },
+    { id: 10, skill: SkillSize.HTML, level: SkillSize.HTML },
+    { id: 11, skill: SkillSize.Bootstrap, level: SkillSize.Bootstrap },
+    { id: 12, skill: SkillSize.TailwindCSS, level: SkillSize.TailwindCSS },
+    { id: 13, skill: SkillSize.Figma, level: SkillSize.Figma },
+    { id: 14, skill: SkillSize.AdobeIllustrator, level: SkillSize.AdobeIllustrator },
+    { id: 15, skill: SkillSize.AdobePhotoshop, level: SkillSize.AdobePhotoshop },
+    { id: 16, skill: SkillSize.MongoDB, level: SkillSize.MongoDB }
+];
+
+
+function SkillCard({ skill, level, ...props }) {
+    const icon = technologyIcons[SkillSize[skill]]; // Usamos la clave del enum para obtener el ícono
 
     return (
-        <Card style={{
-            width: cardSize, 
-            height: cardSize,
-            display: 'flex',   
-            alignItems: 'center', 
-            justifyContent: 'center' 
-        }}>
-            {technologyIcons[skill]}
-            {/* ... el resto del contenido ... */}
-        </Card>
+        <div {...props}>
+            {icon}
+            {/* ... otros elementos ... */}
+        </div>
     );
-};
+}
+
