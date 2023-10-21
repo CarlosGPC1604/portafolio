@@ -6,13 +6,15 @@ import { button as buttonStyles } from "@nextui-org/theme";
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
+import { SkillCard, SkillLevel } from "@/components/SkillCard";
 
 export default function Home() {
 	return (
 		<section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
 			<div className="inline-block max-w-lg text-center justify-center">
-				<h1 className={title()}>Make&nbsp;</h1>
-				<h1 className={title({ color: "violet" })}>beautiful&nbsp;</h1>
+				<h1 className={title()}>
+					hola &nbsp;</h1>
+				<h1 className={title({ color: "violet" })}>beautiful</h1>
 				<br />
 				<h1 className={title()}>
 					websites regardless of your design experience.
@@ -48,6 +50,12 @@ export default function Home() {
 						Get started by editing <Code color="primary">app/page.tsx</Code>
 					</span>
 				</Snippet>
+			</div>
+
+			<div className="skills-grid">
+				{Object.entries(SkillLevel).map(([skill, level]) => (
+					<SkillCard key={skill} skill={skill as keyof typeof SkillLevel} level={level as number} />
+				))}
 			</div>
 		</section>
 	);
