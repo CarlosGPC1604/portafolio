@@ -64,14 +64,14 @@ const skills = [
 ];
 
 
-function SkillCard({ skill, level, ...props }) {
-    const icon = technologyIcons[SkillSize[skill]]; // Usamos la clave del enum para obtener el ícono
+export function SkillCard({ skill, level, ...props }: { skill: keyof typeof SkillSize, level: number, props?: React.HTMLProps<HTMLDivElement> }) {
+    const icon = technologyIcons[skill]; // Usamos la clave del enum para obtener el ícono
 
     return (
-        <div {...props}>
+        <Card {...props}>
             {icon}
             {/* ... otros elementos ... */}
-        </div>
+        </Card>
     );
 }
 
