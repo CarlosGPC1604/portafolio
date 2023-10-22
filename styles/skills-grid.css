@@ -1,5 +1,33 @@
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 5 columnas */
-    gap: 16px; /* Espacio entre tarjetas */
+    grid-template-columns: repeat(6, 1fr); /* 6 columnas */
+    grid-auto-rows: calc((100% / 6) - 15px); /* Altura basada en el ancho de las columnas */
+    gap: 15px;
+}
+
+.skill-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    box-shadow: none;
+    transform: translateY(0);
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
+    -webkit-transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
+    -moz-transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
+    -ms-transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
+    -o-transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+.skill-card:hover {
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.5), 
+                inset 0 0 60px whitesmoke, 
+                inset 20px 0 80px #e58f91, 
+                inset -20px 0 80px #ff638f, 
+                inset 20px 0 300px #ff638f, 
+                inset -20px 0 300px #ff638f, 
+                0 0 5px #fff, 
+                -10px 0 15px #ff638f, 
+                10px 0 15px #ff638f;
+                z-index: 2;
 }

@@ -53,7 +53,7 @@ type SkillCardProps = {
 export function SkillCard({ skill, level, style }: SkillCardProps) {
     const icon = technologyIcons[skill];
     return (
-        <Card style={style}>
+        <Card className="skill-card" style={style}>
             {icon}
             {/* ... otros elementos ... */}
         </Card>
