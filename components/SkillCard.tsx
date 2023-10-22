@@ -7,22 +7,22 @@ import { RiJavascriptFill, RiBootstrapFill } from 'react-icons/ri';
 import { BiLogoTypescript, BiLogoHtml5, BiLogoTailwindCss, BiLogoMongodb } from 'react-icons/bi';
 
 export enum SkillSize {
-    JavaScript = 3,
+    JavaScript = 2,
     TypeScript = 1,
-    React = 1,
+    React = 2,
     Java = 3,
     CSharp = 3,
     CPlusPlus = 2,
     SQLServer = 3,
     PostgreSQL = 1,
     NestJS = 1,
-    HTML = 1,
+    HTML = 3,
     Bootstrap = 1,
     TailwindCSS = 1,
     Figma = 1,
-    AdobeIllustrator = 3,
-    AdobePhotoshop = 3,
-    MongoDB = 3,
+    AdobeIllustrator = 2,
+    AdobePhotoshop = 2,
+    MongoDB = 1,
 }
 
 const technologyIcons: Record<keyof typeof SkillSize, JSX.Element> = {
@@ -44,33 +44,20 @@ const technologyIcons: Record<keyof typeof SkillSize, JSX.Element> = {
     MongoDB: <BiLogoMongodb size="70%"/>,
 };
 
-const skills = [
-    { id: 1, skill: "React", level: SkillSize.React },
-    { id: 2, skill: "JavaScript", level: SkillSize.JavaScript },
-    { id: 3, skill: "TypeScript", level: SkillSize.TypeScript },
-    { id: 4, skill: "Java", level: SkillSize.Java },
-    { id: 5, skill: "CSharp", level: SkillSize.CSharp },
-    { id: 6, skill: "CPlusPlus", level: SkillSize.CPlusPlus },
-    { id: 7, skill: "SQLServer", level: SkillSize.SQLServer },
-    { id: 8, skill: "PostgreSQL", level: SkillSize.PostgreSQL },
-    { id: 9, skill: "NestJS", level: SkillSize.NestJS },
-    { id: 10, skill: "HTML", level: SkillSize.HTML },
-    { id: 11, skill: "Bootstrap", level: SkillSize.Bootstrap },
-    { id: 12, skill: "TailwindCSS", level: SkillSize.TailwindCSS },
-    { id: 13, skill: "Figma", level: SkillSize.Figma },
-    { id: 14, skill: "AdobeIllustrator", level: SkillSize.AdobeIllustrator },
-    { id: 15, skill: "AdobePhotoshop", level: SkillSize.AdobePhotoshop },
-    { id: 16, skill: "MongoDB", level: SkillSize.MongoDB }
-];
+type SkillCardProps = {
+    skill: keyof typeof SkillSize;
+    level: SkillSize;
+    style?: React.CSSProperties;
+};
 
-
-export function SkillCard({ skill, level, ...props }: { skill: keyof typeof technologyIcons, level: number } & React.HTMLProps<HTMLDivElement>) {
-    const icon = technologyIcons[skill]; // Usamos la clave del enum para obtener el ícono
-
+export function SkillCard({ skill, level, style }: SkillCardProps) {
+    const icon = technologyIcons[skill];
     return (
-        <Card {...props}>
+        <Card style={style}>
             {icon}
             {/* ... otros elementos ... */}
         </Card>
     );
 }
+
+
