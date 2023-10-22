@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr); /* 6 columnas */
     grid-auto-rows: calc((100% / 6) - 15px); /* Altura basada en el ancho de las columnas */
-    gap: 15px;
+    gap: 0.4rem;
 }
 
 .skill-card {
