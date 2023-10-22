@@ -48,43 +48,23 @@ export default function Home() {
 				</div>
 			</section>
 			<div className="skills-grid">
-				<SkillCard skill="React" level={SkillSize.React} style={{ 
-					gridColumnStart: 1, 
-					gridColumnEnd: 3, 	
-					gridRowStart: 1, 
-					gridRowEnd: 3 
-				}} />
-				<SkillCard skill="JavaScript" level={SkillSize.JavaScript} style={{ 
-					gridColumnStart: 3, 
-					gridColumnEnd: 5, 
-					gridRowStart: 1, 
-					gridRowEnd: 2 
-				}} />
-				<SkillCard skill="TypeScript" level={SkillSize.TypeScript} style={{ 
-					gridColumnStart: 3, 
-					gridColumnEnd: 4, 
-					gridRowStart: 2, 
-					gridRowEnd: 3 
-				}} />
-				{/* ... otros SkillCards ... */}
-			</div>
-
-			<SkillCard skill="React" level={SkillSize.React} />
-			<SkillCard skill="JavaScript" level={SkillSize.JavaScript} />
-			<SkillCard skill="TypeScript" level={SkillSize.TypeScript} />
-			<SkillCard skill="Java" level={SkillSize.Java} />
-			<SkillCard skill="CSharp" level={SkillSize.CSharp} />
-			<SkillCard skill="CPlusPlus" level={SkillSize.CPlusPlus} />
-			<SkillCard skill="SQLServer" level={SkillSize.SQLServer} />
-			<SkillCard skill="PostgreSQL" level={SkillSize.PostgreSQL} />
-			<SkillCard skill="NestJS" level={SkillSize.NestJS} />
-			<SkillCard skill="HTML" level={SkillSize.HTML} />
-			<SkillCard skill="Bootstrap" level={SkillSize.Bootstrap} />
-			<SkillCard skill="TailwindCSS" level={SkillSize.TailwindCSS} />
-			<SkillCard skill="Figma" level={SkillSize.Figma} />
-			<SkillCard skill="AdobeIllustrator" level={SkillSize.AdobeIllustrator} />
-			<SkillCard skill="AdobePhotoshop" level={SkillSize.AdobePhotoshop} />
-			<SkillCard skill="MongoDB" level={SkillSize.MongoDB} />
+				<SkillCard skill="React" level={SkillSize.React} />
+				<SkillCard skill="JavaScript" level={SkillSize.JavaScript} />
+				<SkillCard skill="TypeScript" level={SkillSize.TypeScript} />
+				<SkillCard skill="Java" level={SkillSize.Java} />
+				<SkillCard skill="CSharp" level={SkillSize.CSharp} />
+				<SkillCard skill="CPlusPlus" level={SkillSize.CPlusPlus} />
+				<SkillCard skill="SQLServer" level={SkillSize.SQLServer} />
+				<SkillCard skill="PostgreSQL" level={SkillSize.PostgreSQL} />
+				<SkillCard skill="NestJS" level={SkillSize.NestJS} />
+				<SkillCard skill="HTML" level={SkillSize.HTML} />
+				<SkillCard skill="Bootstrap" level={SkillSize.Bootstrap} />
+				<SkillCard skill="TailwindCSS" level={SkillSize.TailwindCSS} />
+				<SkillCard skill="Figma" level={SkillSize.Figma} />
+				<SkillCard skill="AdobeIllustrator" level={SkillSize.AdobeIllustrator} />
+				<SkillCard skill="AdobePhotoshop" level={SkillSize.AdobePhotoshop} />
+				<SkillCard skill="MongoDB" level={SkillSize.MongoDB} />
+			</div>			
 		</div>
 	);
 }
