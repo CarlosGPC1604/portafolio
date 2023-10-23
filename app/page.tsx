@@ -108,8 +108,8 @@ export default function Home() {
 				/>
 
 				<SkillCard 
-					skill="CSharp"
-					level={SkillSize.CSharp}
+					skill="SQLServer"
+					level={SkillSize.SQLServer}
 					style={{
 						gridColumn: '1 / span 2',
 						gridRow: '3 / span 2',
@@ -132,8 +132,8 @@ export default function Home() {
 					}}
 				/>
 				<SkillCard
-					skill="SQLServer"
-					level={SkillSize.SQLServer}
+					skill="CSharp"
+					level={SkillSize.CSharp}
 					style={{
 						gridColumn: '2 / span 2',
 						gridRow: '5 / span 2',
