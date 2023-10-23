@@ -25,6 +25,7 @@ import {
 	DiscordIcon,
 	HeartFilledIcon,
 	SearchIcon,
+	LinkedinIcon,
 } from "@/components/icons";
 
 import { Logo } from "@/components/icons";
@@ -56,7 +57,6 @@ export const Navbar = () => {
 			<NavbarContent className="basis-1/5 sm:basis-full" justify="start">
 				<NavbarBrand as="li" className="gap-3 max-w-fit">
 					<NextLink className="flex justify-start items-center gap-1" href="/">
-						<Logo />
 						<p className="font-bold text-inherit">Portafolio</p>
 					</NextLink>
 				</NavbarBrand>
@@ -83,18 +83,14 @@ export const Navbar = () => {
 				justify="end"
 			>
 				<NavbarItem className="hidden sm:flex gap-2">
-					<Link isExternal href={siteConfig.links.twitter} aria-label="Twitter">
-						<TwitterIcon className="text-default-500" />
-					</Link>
-					<Link isExternal href={siteConfig.links.discord} aria-label="Discord">
-						<DiscordIcon className="text-default-500" />
+					<Link isExternal href={siteConfig.links.linkedin} aria-label="linkedin">
+						<LinkedinIcon className="text-default-500" />
 					</Link>
 					<Link isExternal href={siteConfig.links.github} aria-label="Github">
 						<GithubIcon className="text-default-500" />
 					</Link>
 					<ThemeSwitch />
 				</NavbarItem>
-				<NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem>
 				<NavbarItem className="hidden md:flex">
 					<Button
             isExternal
@@ -104,7 +100,7 @@ export const Navbar = () => {
 						startContent={<HeartFilledIcon className="text-danger" />}
 						variant="flat"
 					>
-						Sponsor
+						Cómprame un café
 					</Button>
 				</NavbarItem>
 			</NavbarContent>

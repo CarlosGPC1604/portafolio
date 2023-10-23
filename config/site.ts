@@ -5,24 +5,20 @@
 	description: "Mi portafolio de proyectos.",
 	navItems: [
 		{
-		label: "Home",
+		label: "Inicio",
 		href: "/",
 		},
 		{
-		label: "Docs",
-		href: "/docs",
-		},
-		{
-		label: "Pricing",
-		href: "/pricing",
+		label: "Proyectos",
+		href: "/Proyectos",
 		},
 		{
 		label: "Blog",
 		href: "/blog",
 		},
 		{
-		label: "About",
-		href: "/about",
+		label: "Contacto",
+		href: "/Contacto",
 		},
 	],
 	navMenuItems: [
@@ -65,5 +61,6 @@
 		docs: "https://nextui.org",
 		discord: "https://discord.gg/9b6yyZKmH4",
 		sponsor: "https://patreon.com/jrgarciadev",
+		linkedin: "https://www.linkedin.com/in/carlosgpc/",
 	},
 };
