@@ -24,7 +24,7 @@ export default function Home() {
 						y será un placer trabajar contigo.
 					</h1>
 					<h2 className={subtitle({ class: "mt-4" })}>
-						Programador fullstack y diseñador junior.
+						Programador FullStack Jr - Diseñador Gráfico Jr.
 					</h2>
 				</div>
 
@@ -32,7 +32,7 @@ export default function Home() {
 					<Link
 						isExternal
 						as={NextLink}
-						href={siteConfig.links.docs}
+						href={siteConfig.links.linkedin}
 						className={buttonStyles({ color: "danger", radius: "full", variant: "shadow" })}
 					>
 						Contacto
