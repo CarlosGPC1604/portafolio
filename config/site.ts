@@ -10,7 +10,7 @@
 		},
 		{
 		label: "Proyectos",
-		href: "/Proyectos",
+		href: "/proyectos",
 		},
 		{
 		label: "Blog",
@@ -18,42 +18,26 @@
 		},
 		{
 		label: "Contacto",
-		href: "/Contacto",
+		href: "/contacto",
 		},
 	],
 	navMenuItems: [
 		{
-		label: "Profile",
-		href: "/profile",
-		},
-		{
-		label: "Dashboard",
-		href: "/dashboard",
-		},
-		{
-		label: "Projects",
-		href: "/projects",
-		},
-		{
-		label: "Team",
-		href: "/team",
-		},
-		{
-		label: "Calendar",
-		href: "/calendar",
-		},
-		{
-		label: "Settings",
-		href: "/settings",
-		},
-		{
-		label: "Help & Feedback",
-		href: "/help-feedback",
-		},
-		{
-		label: "Logout",
-		href: "/logout",
-		},
+			label: "Inicio",
+			href: "/",
+			},
+			{
+			label: "Proyectos",
+			href: "/proyectos",
+			},
+			{
+			label: "Blog",
+			href: "/blog",
+			},
+			{
+			label: "Contacto",
+			href: "/contacto",
+			},
 	],
 	links: {
 		github: "https://github.com/CarlosGPC1604/",
