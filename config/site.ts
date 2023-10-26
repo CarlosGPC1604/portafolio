@@ -41,10 +41,9 @@
 	],
 	links: {
 		github: "https://github.com/CarlosGPC1604/",
-		twitter: "https://twitter.com/getnextui",
-		docs: "https://nextui.org",
-		discord: "https://discord.gg/9b6yyZKmH4",
-		sponsor: "https://patreon.com/jrgarciadev",
 		linkedin: "https://www.linkedin.com/in/carlosgpc/",
+		sponsor: "https://paypal.me/carlosgahelpulidocer?country.x=MX&locale.x=es_XC",
+		instagram: "https://www.instagram.com/notexactlymenow/",
+		discord: "https://https://discordapp.com/users/322848291878469632",
 	},
 };
