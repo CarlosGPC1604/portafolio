@@ -1,6 +1,6 @@
 import { title } from "@/components/primitives";
 
-export default function BlogPage() {
+export default function ProjectsPage() {
 	return (
 		<div>
 			<h1 className={title()}>Proyectos</h1>
