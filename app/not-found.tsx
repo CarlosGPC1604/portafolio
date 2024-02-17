@@ -16,7 +16,7 @@ export default function NotFound() {
                 loading="lazy"
                 width={531}
                 height={1200}
-                className="my-10 hover:scale-105 transition duration-1000 ease-in-out cursor-pointer"
+                className="my-12 hover:scale-105 transition duration-1000 ease-in-out cursor-pointer"
             />
             <Link
 						isExternal
