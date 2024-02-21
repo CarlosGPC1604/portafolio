@@ -85,12 +85,11 @@ const technologyNames: Record<keyof typeof SkillName, JSX.Element> = {
 
 type SkillCardProps = {
     skill: keyof typeof SkillSize;
-    skillName: keyof typeof SkillName;
     level: SkillSize;
     style?: React.CSSProperties;
 };
 
-export function SkillCard({ skill, skillName, style }: SkillCardProps) {
+export function SkillCard({ skill, level, style }: SkillCardProps) {
     const icon = technologyIcons[skill];
     const name = technologyNames[skill]
     return (
