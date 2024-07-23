@@ -31,3 +31,12 @@ body {
     text-wrap: balance;
   }
 }
+
+Heading {
+  font-size: 48px; /* Ajusta el tamaño del texto según tu diseño */
+  font-weight: bold; /* Opcional: hace que el texto sea más grueso */
+  background: linear-gradient(to bottom, #ffffff, #d3d3d3); /* Degradado de blanco a gris claro */
+  -webkit-background-clip: text; /* Recorta el fondo al texto en navegadores WebKit */
+  background-clip: text; /* Recorta el fondo al texto */
+  color: transparent; /* Hace que el color del texto sea transparente para mostrar el fondo */
+}

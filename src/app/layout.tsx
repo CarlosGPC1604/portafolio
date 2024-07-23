@@ -18,7 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={inter.className}><Theme appearance="dark" accentColor="ruby" scaling="110%">{children}</Theme></body>
+      <body className={inter.className}>
+        <Theme appearance="dark" accentColor="ruby" scaling="110%">
+          {children}
+        </Theme>
+      </body>
     </html>
   );
 }
